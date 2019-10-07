@@ -1,0 +1,24 @@
+*** Commands need to be ran on the root of the coursework codebase (so ../../) ***
+
+Fetch Data
+==========
+wget -U "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0" \
+ --recursive --no-parent --directory-prefix classy/model/data \
+ "http://www.macs.hw.ac.uk/~ek19/data/CW1/"
+
+Then remove the fluff and keep only the CSVs:
+mv classy/model/data/www.macs.hw.ac.uk/\~ek19/data/CW1/CSV/*.csv classy/model/data && \
+rm -fr classy/model/data/www.macs.hw.ac.uk
+
+Then compress it so it plays nice with git:
+tar -Jcvf classy/model/data.txz classy/model/data
+
+Generate Software Documentation
+===============================
+pdoc --force --html --output-dir __fls/doc/classy classy
+
+Read Software Documentation
+===========================
+python -m http.server --directory __fls/doc/classy --bind 127.0.0.1
+
+Then open http://127.0.0.1:8000/ with browser

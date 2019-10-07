@@ -11,11 +11,16 @@ mv classy/model/data/www.macs.hw.ac.uk/\~ek19/data/CW1/CSV/*.csv classy/model/da
 rm -fr classy/model/data/www.macs.hw.ac.uk
 
 Then compress it so it plays nice with git:
-tar -Jcvf classy/model/data.txz classy/model/data
+tar -Jcvf classy/model/data.txz -C classy/model/data/silo/ .
+
+And to decompress:
+tar -Jxvf classy/model/data.txz -C classy/model/data/silo/ .
+
 
 Generate Software Documentation
 ===============================
 pdoc --force --html --output-dir __fls/doc/classy classy
+
 
 Read Software Documentation
 ===========================

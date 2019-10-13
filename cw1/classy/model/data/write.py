@@ -1,21 +1,30 @@
+
 """
 All data writing operations.
 """
 
+import os
 
-class Writer:
+import pandas
+
+from classy.model.data.read_write import ReadWrite
+
+
+class Writer(ReadWrite):
     """
     Writes given data into HDF5 container in the silo folder.
     """
 
     __slots__ = ()
 
-    @staticmethod
-    def save(file_name):
+    def store_dataframe(self, dataframe, file_name):
         """
-        Adds the .hdf5 extension automatically when saving
+        :param dataframe:
         :param file_name:
-        :return: True on success or False on fail
+        :return: None or raises exception on fail
         """
 
-        pass
+        datastore_path = os.path.join(os.path.join(self.data_path, "hdf5"), file_name+".hdf")
+
+        # This will just bark if something goes wrong, which is preffered in a jupyter notebook
+        dataframe.to_hdf(datastore_path, key=file_name)

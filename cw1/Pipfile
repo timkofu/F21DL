@@ -17,6 +17,7 @@ pdoc3 = "*"
 numba = "*"
 plaidml = "*"
 requests = "*"
+tables = "*"
 
 [requires]
 python_version = "3.7"

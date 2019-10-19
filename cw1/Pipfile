@@ -18,6 +18,7 @@ numba = "*"
 plaidml = "*"
 requests = "*"
 tables = "*"
+opencv-python = "*"
 
 [requires]
 python_version = "3.7"

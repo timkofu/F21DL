@@ -17,8 +17,9 @@ pdoc3 = "*"
 numba = "*"
 plaidml = "*"
 requests = "*"
-tables = "*"
 opencv-python = "*"
+tables = "*"
+jupyter-nbextensions-configurator = "*"
 
 [requires]
 python_version = "3.7"

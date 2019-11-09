@@ -19,11 +19,11 @@ tar -Jxvf classy/model/data.txz -C classy/model/data/silo/ .
 
 Generate Software Documentation
 ===============================
-pdoc --force --html --output-dir __fls/doc/classy classy
+pdoc --force --html --output-dir documentation/classy classy
 
 
 Read Software Documentation
 ===========================
-python -m http.server --directory __fls/doc/classy --bind 127.0.0.1
+python -m http.server --directory documentation/classy --bind 127.0.0.1
 
 Then open http://127.0.0.1:8000/ with browser

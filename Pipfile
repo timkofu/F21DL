@@ -21,6 +21,18 @@ opencv-python = "*"
 tables = "*"
 jupyter-nbextensions-configurator = "*"
 tabulate = "*"
+tpot = "*"
+scipy = "*"
+joblib = "*"
+deap = "*"
+update-checker = "*"
+tqdm = "*"
+stopit = "*"
+dask = {extras = ["dataframe"],version = "*"}
+dask-ml = "*"
+fsspec = ">=0.3.3"
+scikit-mdr = "*"
+skrebate = "*"
 
 [requires]
 python_version = "3.7"

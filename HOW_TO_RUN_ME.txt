@@ -2,4 +2,4 @@
 - From the root diretory of the project, run "pipenv shell" then,
 - "pipenv install"
 - Then run "jupyter-notebook classy/view/jupyter_notebook"
-- When the browser opens, click "Corsework One.pynb"
+- When the browser opens, click "Corsework Two.pynb"

@@ -33,6 +33,13 @@ dask-ml = "*"
 fsspec = ">=0.3.3"
 scikit-mdr = "*"
 skrebate = "*"
+tensorflow = "*"
+scikit-plot = "*"
+yellowbrick = "*"
+ann-visualizer = "*"
+onnxmltools = "*"
+graphviz = "*"
+keras = "*"
 
 [requires]
 python_version = "3.7"

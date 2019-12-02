@@ -1,5 +1,6 @@
 - Install "pipenv"
-- From the root diretory of the project, run "pipenv shell" then,
-- "pipenv install"
+- From the root diretory of the project, run "$ pipenv shell" then,
+- "$ pipenv install"
+- "$ cd classy/model/data/silo/hdf5; tar -Jxvf UNCOMPRESS_ME.txz
 - Then run "jupyter-notebook classy/view/jupyter_notebook"
-- When the browser opens, click "Corsework One.pynb"
+- When the browser opens, click "Corsework Two.pynb"
